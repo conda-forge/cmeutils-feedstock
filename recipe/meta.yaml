@@ -16,15 +16,19 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python =3.9
     - pip
   run:
-    - python >=3.6
-    - freud
-    - gsd
+    - python =3.9
+    - fresnel
+    - freud >=2.13.1
+    - gsd >=3.0
+    - hoomd <4.0=*cpu*
+    - mbuild
     - numpy
-    - matplotlib-base
-    - pymbar
+    - pip
+    - matplotlib
+    - pymbar >=4.0
     - rowan
 
 test:
