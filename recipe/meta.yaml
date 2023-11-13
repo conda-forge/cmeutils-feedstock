@@ -1,5 +1,5 @@
 {% set name = "cmeutils" %}
-{% set version = "0.0.3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cmelab/cmeutils/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: fd5048a292fe72fcdfcf8cfb256b3e07f794989d6f059d2545ea041b37ae1c53
+  sha256: 5d66915d659a8c48991c33ac57533f2afd4ec7720c07182c194bf2a34dcac79d
 
 build:
   noarch: python
@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - python =3.9
+    - python >=3.10
     - pip
   run:
-    - python =3.9
-    - fresnel
+    - python >=3.10
     - freud >=2.13.1
+    - fresnel >=0.13.5
     - gsd >=3.0
-    - hoomd <4.0=*cpu*
-    - mbuild
+    - hoomd >=4.0
+    - mbuild >=0.16.4
     - numpy
     - pip
     - matplotlib
