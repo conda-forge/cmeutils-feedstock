@@ -1,5 +1,5 @@
 {% set name = "cmeutils" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/cmelab/cmeutils/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5d66915d659a8c48991c33ac57533f2afd4ec7720c07182c194bf2a34dcac79d
+  sha256: 5a325fa525950aed0269406da01101995ee818ebfaadef1e8010460a2246a4a0
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
