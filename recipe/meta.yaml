@@ -12,14 +12,13 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - pip
   run:
-    - python >=3.8
     - freud >=2.13.1
     - gmso >=0.11.2
     - fresnel >=0.13.5
@@ -28,6 +27,7 @@ requirements:
     - mbuild >=0.16.4
     - numpy
     - pip
+    - python >=3.10
     - matplotlib
     - pymbar >=4.0
     - rowan
