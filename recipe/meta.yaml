@@ -1,5 +1,5 @@
 {% set name = "cmeutils" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,24 +7,24 @@ package:
 
 source:
   url: https://github.com/cmelab/cmeutils/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e17a77aa8a936b6455532542d28d711e7627a32073dcb5c50366befb27fbcaa9
+  sha256: 9ea078f8e99aaa16d7ca7c83d82a728f1315863dc40d595e2cef94239c7ba03d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3 
+  number: 0 
 
 requirements:
   host:
     - python >=3.10
     - pip
   run:
-    - freud =2.13.2
+    - freud >=3.0
     - gmso >=0.11.2
     - fresnel >=0.13.5
     - gsd >=3.0
     - hoomd >=4.0
-    - mbuild >=0.16.4
+    - mbuild >=0.17.0
     - numpy
     - pip
     - python >=3.10
@@ -53,4 +53,4 @@ extra:
   recipe-maintainers:
     - jennyfothergill
     - chrisjonesBSU
-    - marjanAlbouye
+    - marjanalbooyeh
