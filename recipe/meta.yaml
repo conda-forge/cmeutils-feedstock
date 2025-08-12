@@ -30,7 +30,7 @@ requirements:
     - numpy >=2.0,<2.3
     - pip
     - python >={{ python_min }},<=3.13
-    - matplotlib
+    - matplotlib-base
     - pymbar >=4.0
     - rowan
 
