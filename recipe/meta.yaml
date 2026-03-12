@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/cmelab/cmeutils/archive/refs/tags/v.1.5.0.tar.gz
+  url: https://github.com/cmelab/cmeutils/archive/refs/tags/v1.5.0.tar.gz
   sha256: 743a9c521f7298293848d0d94a9c365e71274377e3ccc6f24f7f19f27dcb9588
 
 build:
