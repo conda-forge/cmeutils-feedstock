@@ -1,14 +1,14 @@
 {% set python_min = '3.10' %}
 {% set name = "cmeutils" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/cmelab/cmeutils/archive/refs/tags/v1.5.1.tar.gz
-  sha256: 04f6d3857d391a86e590c7d229fd201d070f9bd4d1c27dbdae2ed2099c711db7
+  url: https://github.com/cmelab/cmeutils/archive/refs/tags/v1.5.2.tar.gz
+  sha256: 2d71cac4d698f4c6985f17f0ba387d2b62b38a1ada2fa8f11183334b73360c78
 
 build:
   noarch: python
