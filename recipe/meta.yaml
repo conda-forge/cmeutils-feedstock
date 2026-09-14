@@ -1,14 +1,14 @@
-{% set python_min = '3.10' %}
+{% set python_min = '3.11' %}
 {% set name = "cmeutils" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/cmelab/cmeutils/archive/refs/tags/v1.5.2.tar.gz
-  sha256: 2d71cac4d698f4c6985f17f0ba387d2b62b38a1ada2fa8f11183334b73360c78
+  url: https://github.com/cmelab/cmeutils/archive/refs/tags/v1.6.0.tar.gz
+  sha256: 67166b0c0b19f4abc284fac2c7e50befbd12268b8cd30e2a46be37c57b31b4d2
 
 build:
   noarch: python
@@ -22,14 +22,14 @@ requirements:
     - setuptools
   run:
     - freud >=3.4
-    - gmso >=0.14
+    - gmso >=0.17
     - fresnel >=0.13.5
     - gsd >=3.0
     - hoomd >=5.0
     - mbuild >=1.0
     - numpy >=2.0
     - pip
-    - python >={{ python_min }},<=3.13
+    - python >={{ python_min }},<3.15
     - matplotlib-base
     - pymbar >=4.0
     - rowan
